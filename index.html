@@ -7,24 +7,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <section class="banner">
       <header>
         <h2 class="logo">YOUR LOGO</h2>
-        <div class="toggle"></div>
+        <div class="toggle" onclick="toggleMenu();"></div>
       </header>
       <video src="assets/girlBoxing.mp4" muted autoplay loop></video>
       <div class="overlay"></div>
+      <div class="text">
+        <h2>BE STRONGER</h2>
+        <h3>NEVER GIVE UP</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          quisquam mollitia illo incidunt eveniet eos soluta tempora accusantium
+          iusto, laboriosam maxime nisi assumenda, pariatur veniam! Quos eum
+          eaque assumenda autem!
+        </p>
+        <a href="#">join us</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="assets/icons/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/icons/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/icons/twitter.png" alt="" /></a>
+        </li>
+      </ul>
     </section>
-    <div class="text">
-      <h1>BE STRONGER</h1>
-      <h2>NEVER GIVE UP</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        quisquam mollitia illo incidunt eveniet eos soluta tempora accusantium
-        iusto, laboriosam maxime nisi assumenda, pariatur veniam! Quos eum eaque
-        assumenda autem!
-      </p>
-    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

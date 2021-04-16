@@ -17,6 +17,10 @@ section {
   justify-content: flex-start;
   align-items: center;
   background: #111;
+  transition: 0.3s;
+}
+.banner.active {
+  right: 300px;
   transition: 1s;
 }
 
@@ -49,6 +53,14 @@ header .logo {
   cursor: pointer;
 }
 
+.toggle.active {
+  background: url(assets/icons/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
 section video {
   position: absolute;
   top: 0;
@@ -58,7 +70,7 @@ section video {
   object-fit: cover;
 }
 
-section .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -68,6 +80,103 @@ section .overlay {
   mix-blend-mode: overlay;
 }
 
-section .text {
-  z-index: 1000;
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  color: #fff;
+  line-height: 1em;
+  font-size: 6em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  position: relative;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1.1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+}
+
+.sci {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.menu ul {
+  position: relative;
+}
+
+.menu ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+@media (max-width: 991px) {
+  section,
+  section header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
 }
